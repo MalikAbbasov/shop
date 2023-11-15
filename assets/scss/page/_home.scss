@@ -1,0 +1,132 @@
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;    
+  }
+  #card_search{
+    padding-right: 20px;
+    max-width: 30vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-direction: column;
+    .searching{
+        max-width:300px;
+        height: 100px;
+        margin-top: 20px;
+        input{
+            width: 200px;
+            height: 50px;
+            font-size: 15px;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: #74A84A;
+            color: white;
+        }
+    }
+    .filter{
+        width: 240px;
+        min-height: 100px;
+        margin-top: 20px;
+        h3{
+            font-size: 24px;
+        }
+        .range-slider {
+            margin-top: 20px;
+            width: 200px;
+            height: 5px;
+            position: relative;
+            background-color: #2b1de9;
+            border-radius: 2px;
+          }
+          .range-selected {
+            height: 100%;
+            left: 30%;
+            right: 30%;
+            position: absolute;
+            border-radius: 5px;
+            background-color: #1b53c0;
+          }
+          .range-input {
+            position: relative;
+          }
+          .range-input input {
+            position: absolute;
+            width: 200px;
+            height: 5px;
+            top: -7px;
+            background: none;
+            pointer-events: none;
+          }
+          .range-input input::-webkit-slider-thumb {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 3px solid #1b53c0;
+            background-color: #fff;
+            pointer-events: auto;
+            -webkit-appearance: none;
+          }
+          .range-input input::-moz-range-thumb {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 3px solid #1b53c0;
+            background-color: #fff;
+            pointer-events: auto;
+            -moz-appearance: none;
+          }
+          .range-price {
+            margin: 30px 0;
+            width: 100%;
+            .min_max{
+              width: 60px;
+              height: 40px;
+            }
+            label {
+              margin-right: 5px;
+            }
+            input {
+              width: 40px;
+              padding: 5px;
+            }
+            input:first-of-type {
+              margin-right: 15px;
+            }
+          }
+    }
+
+    .categories{
+        width: 250px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        &_head{
+            width: 100%;
+            height: 40%;
+            font-size: 20px;
+        }
+        &_section{
+            width: 100%;
+            height: 60%;
+            font-size: 22px;
+            font-weight: 500;
+            span{
+                color: #74A84A;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+  }
+.line{
+    min-height: 100vh;
+    color: green;
+}
